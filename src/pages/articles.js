@@ -10,16 +10,18 @@ const SecondPage = ({ data }) => {
     <Layout>
       <SEO title="Page two" />
       <h1>Articles</h1>
-      <p>Welcome to articles</p>
 
       <div className="post-list">
         {posts.map(post => (
           <div
             key={post.node.id}
             className="post-list__item"
-            style={{ margin: `40px` }}
+            style={{ margin: `60px` }}
           >
-            <h2>{post.node.frontmatter.title}</h2>
+            <Link to={post.node.fields.slug}>
+              <h2>{post.node.frontmatter.title}</h2>
+            </Link>
+
             <p>{post.node.frontmatter.date}</p>
             <div className="post-list__excerpt">
               <p>{post.node.excerpt}></p>
