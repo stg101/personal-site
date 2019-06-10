@@ -3,12 +3,12 @@ import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
 
-const SecondPage = ({ data }) => {
+const Articles = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Articles" />
       <h1>Articles</h1>
 
       <div className="post-list">
@@ -36,7 +36,7 @@ const SecondPage = ({ data }) => {
   )
 }
 
-export default SecondPage
+export default Articles
 
 // Get all markdown data, in descending order by date, and grab the id, excerpt, slug, date, and title
 export const pageQuery = graphql`
