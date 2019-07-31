@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
 * {
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Raleway", sans-serif;
 }
 
 html {
