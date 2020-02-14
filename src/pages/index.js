@@ -34,8 +34,8 @@ const IndexPage = () => (
         <h1 style={{ margin: 0 }}>Hi people</h1>
 
         <div>
-          <p style={{ margin: 0 }}>Welcome to my personal site.</p>
-          <p style={{ margin: 0 }}>I am a full stack developer</p>
+          <p style={{ margin: 0 }}>Entra bajo tu propia</p>
+          <p style={{ margin: 0 }}>irresponsabilidad</p>
         </div>
       </div>
       <div
